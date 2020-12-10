@@ -1,0 +1,47 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spark X- New Post</title>
+    <link rel="stylesheet" type="text/css" href=" css/newpost.css ">
+
+    <script class="jsbin" src=" js/jquery.js "></script>
+    <link rel="icon" href=" images/favicon123.png'%}" type="image" sizes="16x16" class="favicon">
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result)
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <span class="topband">
+            <a href="/"><img src=" images/back icon.png'%}" class="topicon"></a>
+        </span>
+        <div class="logoholder">
+            <p class="logotext">New Post</p>
+        </div>
+    </div>
+    <div class="mainarea">
+        <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="submit">Post</button>
+        </form>
+    </div>
+</body>
+
+</html>
