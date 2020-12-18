@@ -1,0 +1,22 @@
+{
+  "name": "sparkx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss profilePage/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PawanJS/Spark-X-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PawanJS/Spark-X-frontend/issues"
+  },
+  "homepage": "https://github.com/PawanJS/Spark-X-frontend#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

@@ -1,0 +1,32 @@
+.gallery {
+  padding: 5rem 0;
+  @media only screen and (max-width: 68.75em) {
+    grid-column: 1 / -1;
+  }
+
+  &__images {
+    display: grid;
+  }
+
+  &__images--container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 4rem;
+
+    @media only screen and (max-width: 21em) {
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+
+    @media only screen and (max-width: 15em) {
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+  }
+
+  &__img {
+    @extend %imageDefault;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
