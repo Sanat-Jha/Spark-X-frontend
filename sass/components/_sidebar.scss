@@ -50,7 +50,7 @@
   &__person--followers,
   &__person--following,
   &__link {
-    background-color: $color-light;
+    background-color: $color-blue;
     padding: 1rem 2rem;
     border: none;
     cursor: pointer;
@@ -58,7 +58,7 @@
     transition: background-color 0.2s;
 
     &:hover {
-      background-color: rgba($color-light, 0.6);
+      background-color: rgba($color-blue, 0.6);
     }
 
     &:focus {
@@ -74,5 +74,6 @@
 
   &__link {
     display: flex;
+    text-decoration: none;
   }
 }

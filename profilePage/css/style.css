@@ -167,14 +167,14 @@ body {
       .sidebar__person-stats {
         flex-wrap: wrap; } }
   .sidebar__person--post, .sidebar__person--followers, .sidebar__person--following, .sidebar__link {
-    background-color: #edf2f8;
+    background-color: #1807d9;
     padding: 1rem 2rem;
     border: none;
     cursor: pointer;
     border-radius: 3px;
     transition: background-color 0.2s; }
     .sidebar__person--post:hover, .sidebar__person--followers:hover, .sidebar__person--following:hover, .sidebar__link:hover {
-      background-color: rgba(237, 242, 248, 0.6); }
+      background-color: rgba(24, 7, 217, 0.6); }
     .sidebar__person--post:focus, .sidebar__person--followers:focus, .sidebar__person--following:focus, .sidebar__link:focus {
       outline: none; }
   .sidebar__additional-items {
@@ -182,7 +182,8 @@ body {
     gap: 2rem;
     align-items: flex-start; }
   .sidebar__link {
-    display: flex; }
+    display: flex;
+    text-decoration: none; }
 
 .header {
   margin-top: 2.05rem;
@@ -213,3 +214,6 @@ body {
   @media only screen and (max-width: 40em) {
     .mainarea {
       grid-template-columns: 1fr; } }
+
+.whitetext {
+  color: #fff; }
