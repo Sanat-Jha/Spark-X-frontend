@@ -1,7 +1,7 @@
 {
   "name": "sparkx",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Front end of SparkX A social media site.",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss profilePage/css/style.css -w"
@@ -18,5 +18,6 @@
   "homepage": "https://github.com/PawanJS/Spark-X-frontend#readme",
   "dependencies": {
     "node-sass": "^5.0.0"
-  }
+  },
+  "devDependencies": {}
 }

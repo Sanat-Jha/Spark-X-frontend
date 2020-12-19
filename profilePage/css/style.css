@@ -174,7 +174,7 @@ body {
     border-radius: 3px;
     transition: background-color 0.2s; }
     .sidebar__person--post:hover, .sidebar__person--followers:hover, .sidebar__person--following:hover, .sidebar__link:hover {
-      background-color: rgba(24, 7, 217, 0.6); }
+      background-color: rgba(24, 7, 217, 0.8); }
     .sidebar__person--post:focus, .sidebar__person--followers:focus, .sidebar__person--following:focus, .sidebar__link:focus {
       outline: none; }
   .sidebar__additional-items {
