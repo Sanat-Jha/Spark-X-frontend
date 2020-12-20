@@ -1,0 +1,193 @@
+<!-- 
+    Hi,
+You can start your work here. But please read this first.
+
+*The css and js file of the same name is there in the same folder where you can write the css, js code.
+*For places that need images like you can take random images from net and save it in the images folder and use here.
+*You don't need to set the favicon.
+*Please don't try making changes in the already written code.
+*You can put your ideas what you see in a profile page of a social media website and make it here.
+*Write a clean code and keep commenting.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Spark X- Profile</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logoholder">
+        <p class="logotext">Profile</p>
+      </div>
+      <span class="topband">
+        <img src="img/backicon.png" class="topicon" />
+      </span>
+    </header>
+    <section class="mainarea">
+      <!-- make your design here -->
+      <section class="sidebar">
+        <div class="sidebar__profile">
+          <figure class="sidebar__item">
+            <img src="img/person1.webp" alt="Peter" class="sidebar__img" />
+          </figure>
+          <h2 class="heading-2">
+            Liza Heston
+            <span class="paragraph sidebar__location">username</span>
+          </h2>
+          <div class="sidebar__person-stats">
+            <button class="sidebar__person--post">
+              <h2 class="heading-2 whitetext">758</h2>
+              <p class="paragraph">Post</p>
+            </button>
+            <button class="sidebar__person--followers open-button">
+              <h2 class="heading-2 whitetext">254k</h2>
+              <p class="paragraph">Followers</p>
+            </button>
+            <!-- * followers popup -->
+            <div class="followers__container">
+              <div class="followers__header">
+                <h3 class="heading-2">Followers</h3>
+                <button class="close-button followers__btn">&times;</button>
+              </div>
+              <div class="followers__body">
+                <figure class="followers__body--item">
+                  <img
+                    src="img/person1.webp"
+                    alt="Person"
+                    class="followers__body--img"
+                  />
+                </figure>
+                <a href="#0" class="followers__body--person">
+                  <h4 class="heading-4">Liza</h4>
+                </a>
+              </div>
+            </div>
+            <div id="overlay"></div>
+            <button class="sidebar__person--following open-button">
+              <h2 class="heading-2 whitetext">245</h2>
+              <p class="paragraph">Following</p>
+            </button>
+            <!-- * following popup -->
+            <div class="followers__container">
+              <div class="followers__header">
+                <h3 class="heading-2">Following</h3>
+                <button class="close-button followers__btn">&times;</button>
+              </div>
+              <div class="followers__body">
+                <figure class="followers__body--item">
+                  <img
+                    src="img/person1.webp"
+                    alt="Person"
+                    class="followers__body--img"
+                  />
+                </figure>
+                <a href="#0" class="followers__body--person">
+                  <h4 class="heading-4">Liza</h4>
+                </a>
+              </div>
+            </div>
+            <div id="overlay"></div>
+          </div>
+        </div>
+        <div class="sidebar__additional-items">
+          <a href="#0" class="sidebar__link">
+            <h3 class="heading-3 whitetext">Follow</h3>
+          </a>
+          <a href="#0" class="sidebar__link">
+            <h3 class="heading-3 whitetext">Message</h3>
+          </a>
+        </div>
+      </section>
+      <section class="profile">
+        <figure class="profile__item">
+          <img src="img/person1.webp" alt="Peter" class="profile__img" />
+        </figure>
+        <div class="profile__name">
+          <h1 class="heading-1">
+            Liza Heston
+            <svg class="profile__icon">
+              <use xlink:href="img/sprite.svg#check"></use>
+            </svg>
+          </h1>
+        </div>
+        <div class="profile__about">
+          <p class="paragraph">🔥 LIZA 🔥</p>
+          <p class="paragraph">💣 Girl in tech Biologist</p>
+          <p class="paragraph">🔌 Programmer</p>
+          <p class="paragraph">🖤 Analyze DNA</p>
+          <p class="paragraph">🖤 Talk about health and DNA</p>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__images">
+          <h2 class="heading-2 mb-md">Photo Feed</h2>
+          <div class="gallery__images--container">
+            <figure class="gallery__item">
+              <a href="#0" class="gallery__images--link">
+                <img
+                  src="img/feed1.webp"
+                  alt="Images of user"
+                  class="gallery__img"
+              /></a>
+            </figure>
+            <figure class="gallery__item">
+              <a href="#0" class="gallery__images--link">
+                <img
+                  src="img/feed2.webp"
+                  alt="Images of user"
+                  class="gallery__img"
+                />
+              </a>
+            </figure>
+            <figure class="gallery__item">
+              <a href="#0" class="gallery__images--link">
+                <img
+                  src="img/feed3.webp"
+                  alt="Images of user"
+                  class="gallery__img"
+                />
+              </a>
+            </figure>
+            <figure class="gallery__item">
+              <a href="#0" class="gallery__images--link">
+                <img
+                  src="img/feed4.webp"
+                  alt="Images of user"
+                  class="gallery__img"
+                />
+              </a>
+            </figure>
+            <figure class="gallery__item">
+              <a href="#0" class="gallery__images--link">
+                <img
+                  src="img/feed5.webp"
+                  alt="Images of user"
+                  class="gallery__img"
+                />
+              </a>
+            </figure>
+            <figure class="gallery__item">
+              <a href="#0" class="gallery__images--link">
+                <img
+                  src="img/feed6.webp"
+                  alt="Images of user"
+                  class="gallery__img"
+                />
+              </a>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
