@@ -80,7 +80,8 @@
 
 // * styling for followers pop-up
 
-.followers {
+.followers,
+.following {
   &__container {
     position: fixed;
     top: 50%;
