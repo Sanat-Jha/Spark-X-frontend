@@ -77,3 +77,79 @@
     text-decoration: none;
   }
 }
+
+// * styling for followers pop-up
+
+.followers {
+  &__container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 10;
+    max-width: 30vw;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1rem 3rem rgba($color-dark, 0.5);
+    background-color: $color-white;
+  }
+
+  &__active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__header {
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid $color-dark;
+  }
+
+  &__btn {
+    background: transparent;
+    font-size: 4rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__body {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &--item {
+      width: 8rem;
+      height: 8rem;
+    }
+
+    &--img {
+      @extend %imageDefault;
+    }
+
+    &--person {
+      text-decoration: none;
+      font-size: 2rem;
+      color: $color-dark;
+    }
+  }
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  bottom: 0%;
+  right: 0;
+  transition: 200ms ease-in-out;
+  background-color: rgba($color-dark, 0.8);
+  pointer-events: none;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}

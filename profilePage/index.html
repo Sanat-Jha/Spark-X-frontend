@@ -22,7 +22,6 @@ You can start your work here. But please read this first.
     />
     <link rel="stylesheet" href="css/style.css" />
     <title>Spark X- Profile</title>
-    <script src="profile.js"></script>
   </head>
   <body>
     <header class="header">
@@ -49,14 +48,54 @@ You can start your work here. But please read this first.
               <h2 class="heading-2 whitetext">758</h2>
               <p class="paragraph">Post</p>
             </button>
-            <button class="sidebar__person--followers">
+            <button class="sidebar__person--followers open-button">
               <h2 class="heading-2 whitetext">254k</h2>
               <p class="paragraph">Followers</p>
             </button>
-            <button class="sidebar__person--following">
+            <!-- * followers popup -->
+            <div class="followers__container">
+              <div class="followers__header">
+                <h3 class="heading-2">Followers</h3>
+                <button class="close-button followers__btn">&times;</button>
+              </div>
+              <div class="followers__body">
+                <figure class="followers__body--item">
+                  <img
+                    src="img/person1.webp"
+                    alt="Person"
+                    class="followers__body--img"
+                  />
+                </figure>
+                <a href="#0" class="followers__body--person">
+                  <h4 class="heading-4">Liza</h4>
+                </a>
+              </div>
+            </div>
+            <div id="overlay"></div>
+            <button class="sidebar__person--following open-button">
               <h2 class="heading-2 whitetext">245</h2>
               <p class="paragraph">Following</p>
             </button>
+            <!-- * following popup -->
+            <div class="followers__container">
+              <div class="followers__header">
+                <h3 class="heading-2">Following</h3>
+                <button class="close-button followers__btn">&times;</button>
+              </div>
+              <div class="followers__body">
+                <figure class="followers__body--item">
+                  <img
+                    src="img/person1.webp"
+                    alt="Person"
+                    class="followers__body--img"
+                  />
+                </figure>
+                <a href="#0" class="followers__body--person">
+                  <h4 class="heading-4">Liza</h4>
+                </a>
+              </div>
+            </div>
+            <div id="overlay"></div>
           </div>
         </div>
         <div class="sidebar__additional-items">
@@ -149,5 +188,6 @@ You can start your work here. But please read this first.
         </div>
       </section>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
