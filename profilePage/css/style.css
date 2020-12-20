@@ -1,4 +1,5 @@
-.gallery__img, .profile__img, .profile__suggestion--img, .followers__body--img {
+.gallery__img, .profile__img, .profile__suggestion--img, .followers__body--img,
+.following__body--img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -188,7 +189,8 @@ body {
     display: flex;
     text-decoration: none; }
 
-.followers__container {
+.followers__container,
+.following__container {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -201,31 +203,37 @@ body {
   box-shadow: 0 1rem 3rem rgba(66, 61, 61, 0.5);
   background-color: #fff; }
 
-.followers__active {
+.followers__active,
+.following__active {
   transform: translate(-50%, -50%) scale(1); }
 
-.followers__header {
+.followers__header,
+.following__header {
   padding: 2rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid #423d3d; }
 
-.followers__btn {
+.followers__btn,
+.following__btn {
   background: transparent;
   font-size: 4rem;
   border: none;
   cursor: pointer; }
 
-.followers__body {
+.followers__body,
+.following__body {
   padding: 3rem;
   display: flex;
   justify-content: space-around;
   align-items: center; }
-  .followers__body--item {
+  .followers__body--item,
+  .following__body--item {
     width: 8rem;
     height: 8rem; }
-  .followers__body--person {
+  .followers__body--person,
+  .following__body--person {
     text-decoration: none;
     font-size: 2rem;
     color: #423d3d; }
