@@ -7,6 +7,7 @@
     <title>Spark X</title>
     <link rel="stylesheet" type="text/css" href=" home.css ">
     <link rel="icon" href=" images/favicon.png" type="image" sizes="16x16" class="favicon">
+    <script src="home.js"></script>
 </head>
 
 <body>
@@ -16,9 +17,17 @@
             <img src="images/notificationicon.png" class="topicon desktop">
             <img src="images/profile.png" class=" topicon circleshape desktop">
             <img src="images/settingsicon.png" class="topicon desktop">
+            <img src="images/searchicon.png" class="topicon desktop">
         </span>
         <span class="topband mobile">
-            <img src="images/hamburgericon.png" class="topicon mobile">
+            <img src="images/hamburgericon.png" class="topicon mobile" onclick="hamburger()">
+        </span>
+        <span class="topband-hamburger" id="topband-hamburger">
+            <img src=" images/plus icon.png" class="hamicon">
+            <img src="images/notificationicon.png" class="hamicon">
+            <img src="images/profile.png" class=" hamicon">
+            <img src="images/settingsicon.png" class="hamicon">
+            <img src="images/searchicon.png" class="hamicon">
         </span>
         <div class="logoholder">
             <p class="logotext">Spark X</p>

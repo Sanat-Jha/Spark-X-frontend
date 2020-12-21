@@ -96,6 +96,9 @@
   .mobile{
       display: none;
   }
+  .hamicon{
+      display: none;
+  }
 }
 
 
@@ -179,7 +182,7 @@
       }
       .postCaption {
         border-left: 0.4ex solid #1807d9;
-        width: 100%;
+        width: 80%;
         height: fit-content;
         padding: 0;
         margin-left: 3%;
@@ -196,5 +199,21 @@
       .curveLine {
         width: 100%;
         margin-top: -2%;
+      }
+      .topband-hamburger{
+          width: 100%;
+          background-color: #0eccb9;
+          height: fit-content;
+          position: absolute;
+          margin-top: 15%;
+          padding: 2%;
+          z-index: 100;
+          display: none;
+      }
+      .hamicon{
+          display: inline;
+          width: 8%;
+          height: auto;
+          margin: auto 5%;
       }
   }
