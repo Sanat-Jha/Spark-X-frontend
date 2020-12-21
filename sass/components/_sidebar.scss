@@ -94,6 +94,13 @@
     border-radius: 3px;
     box-shadow: 0 1rem 3rem rgba($color-dark, 0.5);
     background-color: $color-white;
+
+    @media only screen and (max-width: 68.75em) {
+      max-width: 60vw;
+    }
+    @media only screen and (max-width: 40em) {
+      max-width: 80vw;
+    }
   }
 
   &__active {
@@ -118,8 +125,8 @@
   &__body {
     padding: 3rem;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    gap: 2rem;
 
     &--item {
       width: 8rem;
