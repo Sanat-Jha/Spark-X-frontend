@@ -202,6 +202,14 @@ body {
   border-radius: 3px;
   box-shadow: 0 1rem 3rem rgba(66, 61, 61, 0.5);
   background-color: #fff; }
+  @media only screen and (max-width: 68.75em) {
+    .followers__container,
+    .following__container {
+      max-width: 60vw; } }
+  @media only screen and (max-width: 40em) {
+    .followers__container,
+    .following__container {
+      max-width: 80vw; } }
 
 .followers__active,
 .following__active {
@@ -226,8 +234,8 @@ body {
 .following__body {
   padding: 3rem;
   display: flex;
-  justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  gap: 2rem; }
   .followers__body--item,
   .following__body--item {
     width: 8rem;
@@ -285,3 +293,6 @@ body {
 
 .whitetext {
   color: #fff; }
+
+.modal__btn {
+  margin-left: auto; }
