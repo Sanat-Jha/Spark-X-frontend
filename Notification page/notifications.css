@@ -51,6 +51,7 @@ body {
     margin: auto;
     border-radius: 1ex;
     padding: 2% 0% 0% 2%;
+    cursor: pointer;
     box-shadow: 0 0 1ex 0.5ex rgb(63, 60, 60);
   }
   .iconback {
@@ -134,4 +135,58 @@ body {
     width: 60%;
     margin: 15% 5% 5% 17%;
   }
+}
+.notification-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  padding: 3rem;
+  max-width: 40vw;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0.8rem 3rem rgba(0, 0, 0, 0.5);
+  background-color: tomato;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.8s;
+  z-index: 10;
+  background-color: #fff;
+}
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notification-title {
+  font-size: 2rem;
+}
+.notification-body {
+  font-size: 1.7rem;
+}
+.btn {
+  background: transparent;
+  font-size: 2.5rem;
+  cursor: pointer;
+  border: none;
+}
+.btn:focus {
+  outline: none;
+}
+.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  transition: all 0.8s;
+  opacity: 0;
+}
+#overlay.overlay-active {
+  pointer-events: all;
+  opacity: 1;
 }
