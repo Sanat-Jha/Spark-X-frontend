@@ -16,7 +16,10 @@
             <img src="images/notificationicon.png" class="topicon desktop">
             <img src="images/profile.png" class=" topicon circleshape desktop">
             <img src="images/settingsicon.png" class="topicon desktop">
-            <img src="images/searchicon.png" class="topicon desktop">
+            <img src="images/searchicon.png" class="topicon desktop" onclick="search()">
+            <form action="/search" class="searchform" id="search">
+              <input type="text" name="search" class="search" placeholder="Search">
+              </form>
         </span>
         <span class="topband mobile">
             <img src="images/hamburgericon.png" class="topicon mobile" onclick="hamburger()">
