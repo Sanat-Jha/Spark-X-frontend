@@ -93,141 +93,160 @@
   .curveLine {
     width: 100%;
   }
-  .mobile {
-    display: none;
+  .mobile{
+      display: none;
   }
-  .hamicon {
-    display: none;
+  .hamicon{
+      display: none;
   }
-  .search {
+  .search{
     display: inline-block;
     width: 10%;
     height: 3ex;
     margin-top: -100px;
     font-size: large;
     border: none;
-
+    
     box-shadow: 0px 0px 4px 2px #1807d9;
     border-radius: 0.2ex;
   }
-  .searchform {
+  .searchform{
     display: none;
     margin-left: 8%;
   }
+  .msearchform{
+    display: none;
+  }
 }
+
 
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  body {
-    margin: 0;
-    padding: 0;
+    /* For mobile phones: */
+    .msearch{
+      display: inline-block;
+      width: 80%;
+      height: 3ex;
+      margin-top: 10%;
+      font-size: large;
+      border: none;
+      
+      box-shadow: 0px 0px 4px 2px #1807d9;
+      border-radius: 0.2ex;
+    }
+    .msearchform{
+      margin-left: 8%;
+      display: none;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+      }
+      .desktop{
+          display: none;
+      }
+      .logoholder {
+        background-color: #1807d9;
+        border-bottom-left-radius: 0.4em;
+        border-bottom-right-radius: 0.4em;
+        width: fit-content;
+        height: fit-content;
+        padding: 0.7rem 0.7rem;
+        margin-left: 1em;
+        position: absolute;
+      }
+      .logotext {
+        color: aliceblue;
+        font-size: 1.5rem;
+        margin: 0;
+      }
+      .topband {
+        margin-top: 1.05rem;
+        background-color: #0eccb9;
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+      }
+      .topicon {
+        width: 5ex;
+        height: 100%;
+        padding: 0;
+        left: 40ex;
+        position: relative;
+      }
+      .circleshape {
+        border-radius: 100%;
+      }
+    
+      .mainarea {
+        min-width: 50%;
+        width: 100%;
+        height: 50%;
+        margin: 20% 0% 0% 0%;
+        position: absolute;
+      }
+      .dpImage {
+        width: 8%;
+        height: 8%;
+        border-radius: 50%;
+        margin-bottom: -5%;
+        position: relative;
+        left: 5%;
+        box-shadow: 0px 0px 4px 2px #1807d9;
+      }
+      .postImage {
+        width: 100%;
+        margin-bottom: 0;
+      }
+      .postIcon {
+        width: 25%;
+        z-index: -0;
+        position: relative;
+        margin: 0 2%;
+      }
+      .postOptions {
+        border: 0.4ex solid #1807d9;
+        width: 30%;
+        height: fit-content;
+        margin-top: -1%;
+        padding: 0;
+        margin-left: 3%;
+      }
+      .postCaption {
+        border-left: 0.4ex solid #1807d9;
+        width: 80%;
+        height: fit-content;
+        padding: 0;
+        margin-left: 3%;
+      }
+      .caption {
+        margin: 0 2%;
+        font-size: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .time {
+        margin: 0 2%;
+        color: cadetblue;
+      }
+      .curveLine {
+        width: 100%;
+        margin-top: -2%;
+      }
+      .topband-hamburger{
+          width: 100%;
+          background-color: #0eccb9;
+          height: fit-content;
+          position: absolute;
+          margin-top: 15%;
+          padding: 2% 0%;
+          z-index: 100;
+          display: none;
+      }
+      .hamicon{
+          display: inline;
+          width: 8%;
+          height: auto;
+          margin: auto 5%;
+      }
   }
-  .desktop {
-    display: none;
-  }
-  .logoholder {
-    background-color: #1807d9;
-    border-bottom-left-radius: 0.4em;
-    border-bottom-right-radius: 0.4em;
-    width: fit-content;
-    height: fit-content;
-    padding: 0.7rem 0.7rem;
-    margin-left: 1em;
-    position: absolute;
-  }
-  .logotext {
-    color: aliceblue;
-    font-size: 1.5rem;
-    margin: 0;
-  }
-  .topband {
-    margin-top: 1.05rem;
-    background-color: #0eccb9;
-    width: 100%;
-    height: fit-content;
-    position: absolute;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-  }
-  .topicon {
-    width: 5ex;
-    height: 100%;
-    padding: 0;
-    left: 40ex;
-    position: relative;
-  }
-  .circleshape {
-    border-radius: 100%;
-  }
-
-  .mainarea {
-    min-width: 50%;
-    width: 100%;
-    height: 50%;
-    margin: 20% 0% 0% 0%;
-    position: absolute;
-  }
-  .dpImage {
-    width: 8%;
-    height: 8%;
-    border-radius: 50%;
-    margin-bottom: -5%;
-    position: relative;
-    left: 5%;
-    box-shadow: 0px 0px 4px 2px #1807d9;
-  }
-  .postImage {
-    width: 100%;
-    margin-bottom: 0;
-  }
-  .postIcon {
-    width: 25%;
-    z-index: -0;
-    position: relative;
-    margin: 0 2%;
-  }
-  .postOptions {
-    border: 0.4ex solid #1807d9;
-    width: 30%;
-    height: fit-content;
-    margin-top: -1%;
-    padding: 0;
-    margin-left: 3%;
-  }
-  .postCaption {
-    border-left: 0.4ex solid #1807d9;
-    width: 80%;
-    height: fit-content;
-    padding: 0;
-    margin-left: 3%;
-  }
-  .caption {
-    margin: 0 2%;
-    font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .time {
-    margin: 0 2%;
-    color: cadetblue;
-  }
-  .curveLine {
-    width: 100%;
-    margin-top: -2%;
-  }
-  .topband-hamburger {
-    width: 100%;
-    background-color: #0eccb9;
-    height: fit-content;
-    position: absolute;
-    margin-top: 15%;
-    padding: 2%;
-    z-index: 100;
-    display: none;
-  }
-  .hamicon {
-    display: inline;
-    width: 8%;
-    height: auto;
-    margin: auto 5%;
-  }
-}

@@ -14,3 +14,11 @@ function search() {
     x.style.display = "inline";
   }
 }
+function msearch() {
+  var x = document.getElementById("msearch");
+  if (x.style.display === "inline") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "inline";
+  }
+}
