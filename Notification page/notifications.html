@@ -12,46 +12,44 @@ You can start your work here. But please read this first.
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spark X- Notifications</title>
-    <link rel="stylesheet" type="text/css" href="notifications.css ">
-    <script src="notification.js"></script>
-</head>
+    <link rel="stylesheet" type="text/css" href="notifications.css " />
+  </head>
 
-<body>
+  <body>
     <div class="header">
-        <span class="topband">
-            <img src="images/backicon.png" class="topicon">
-        </span>
-        <div class="logoholder">
-            <p class="logotext">Notifications</p>
-        </div>
+      <span class="topband">
+        <img src="images/backicon.png" class="topicon" />
+      </span>
+      <div class="logoholder">
+        <p class="logotext">Notifications</p>
+      </div>
     </div>
     <div class="mainarea">
-<!-- make your design here -->
-<div class="notification">
-    <span class="iconback">
-<img src="images/icon.png" class="icon">
-    </span>
-    <div class="title">
-        Title
-    </div>
-    <div class="text">
-    text...........................................
-    </div>
+      <!-- make your design here -->
+      <div class="notification open-btn">
+        <span class="iconback">
+          <img src="images/icon.png" class="icon" />
+        </span>
+        <div class="title">Title</div>
+        <div class="text">text...........................................</div>
 
-    <!-- <p class="text">
+        <!-- <p class="text">
         This is the main Text.
     </p> -->
-</div>
-
-
-
-
+      </div>
+      <div class="notification-popup modal">
+        <div class="notification-header">
+          <div class="notification-title">Title</div>
+          <button class="btn close-btn">&times;</button>
+        </div>
+        <div class="notification-body">Content</div>
+      </div>
+      <div id="overlay" class="overlay-active"></div>
     </div>
-</body>
-
+    <script src="notification.js"></script>
+  </body>
 </html>
