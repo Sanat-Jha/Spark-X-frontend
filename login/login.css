@@ -1,133 +1,262 @@
-body {
-  background-image: linear-gradient(#1a0dac, rgb(146, 188, 236));
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  body {
+    background-image: linear-gradient(#1a0dac, rgb(146, 188, 236));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  form {
+    width: fit-content;
+    height: fit-content;
+    padding: 3% 10% 5% 2%;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.233),
+      inset 0px 0px 10px 5px rgb(5, 217, 245);
+    display: block;
+    border: solid transparent 2px;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 0;
+    border-radius: 2ex;
+    position: relative;
+  }
+  .logoimg {
+    width: 10%;
+    margin: -15% 0 0 -10%;
+    position: absolute;
+  }
+  .username,
+  .password {
+    border-radius: 1ex;
+    box-shadow: 0px 0px 1ex 0.5ex rgba(0, 0, 0, 0.233);
+    display: block;
+    border: none;
+    width: 130%;
+    height: 2em;
+    background-color: rgb(4, 230, 247);
+    margin-bottom: 5%;
+    color: white;
+    text-indent: 2%;
+    font-size: 1em;
+    padding: 2%;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .username:focus,
+  .password:focus {
+    box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.233);
+  }
+  .loginText {
+    font-family: "lovelyFont";
+    font-size: 3em;
+    text-align: center;
+    margin: -3% 0 8% 10%;
+  }
+  .headText {
+    font-family: "SparkX";
+    font-size: 5em;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px #160202;
+  }
+  @font-face {
+    font-family: "lovelyFont";
+    src: local("Lovely Font"), local("Lovely-Font"),
+      url("login font.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "SparkX";
+    src: local("Lovely Font"), local("Lovely-Font"),
+      url("sparkx font.ttf") format("opentype");
+  }
+  .button {
+    background: rgb(2, 3, 41);
+    border: none;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.233);
+    color: white;
+    border-radius: 0.5ex;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0.8rem 2rem;
+    display: block;
+    margin-top: 2rem;
+    margin-left: 10%;
+  }
+  .button:hover {
+    background: white;
+    color: black;
+    box-shadow: 0px 0px 10px 5px black;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .signup {
+    background-color: rgb(6, 10, 61);
+    width: 35%;
+    height: 18%;
+    position: absolute;
+    margin-top: 18%;
+    margin-left: 54%;
+    border-radius: 1ex 0 1ex 1ex;
+  }
+  .rightBand {
+    background-color: black;
+    width: 10%;
+    height: 100.5%;
+    position: absolute;
+    margin-top: -11%;
+    margin-left: 79%;
+  }
+  .newheretext {
+    color: white;
+    font-family: sans-serif;
+    text-indent: 5%;
+    margin-top: 3%;
+  }
+  hr {
+    width: 90%;
+    margin-top: -10%;
+  }
+  .signuptext {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+    margin: -5% 20%;
+    font-size: 150%;
+  }
+  .signup:hover {
+    box-shadow: inset 0px 0px 10px 1px rgb(255, 255, 255);
+  }
 }
-form {
-  width: fit-content;
-  height: fit-content;
-  padding: 3% 10% 5% 2%;
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.233),
-    inset 0px 0px 10px 5px rgb(5, 217, 245);
-  display: block;
-  border: solid transparent 2px;
-  margin: auto;
-  margin-top: 4%;
-  margin-bottom: 0;
-  border-radius: 2ex;
-  position: relative;
-}
-.logoimg{
-  width: 10%;
-  margin: -15% 0 0 -10%;
-  position: absolute;
-}
-.username,
-.password {
-  border-radius: 1ex;
-  box-shadow: 0px 0px 1ex 0.5ex rgba(0, 0, 0, 0.233);
-  display: block;
-  border: none;
-  width: 130%;
-  height: 2em;
-  background-color: rgb(4, 230, 247);
-  margin-bottom: 5%;
-  color: white;
-  text-indent: 2%;
-  font-size: 1em;
-  padding: 2%;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-.username:focus,
-.password:focus {
-  box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.233);
-}
-.loginText {
-  font-family: 'lovelyFont';
-  font-size: 3em;
-  text-align: center;
-  margin: -3% 0 8% 10%;
-}
-.headText {
-  font-family: 'SparkX';
-  font-size: 5em;
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px #160202;
-}
-@font-face {
-	font-family: 'lovelyFont';
-	src: 
-		local('Lovely Font'),
-		local('Lovely-Font'),
-		url('login font.otf') 
-		format('opentype');
-}
-@font-face {
-	font-family: 'SparkX';
-	src: 
-		local('Lovely Font'),
-		local('Lovely-Font'),
-		url('sparkx font.ttf') 
-		format('opentype');
-}
-.button {
-  background: rgb(2, 3, 41);
-  border: none;
-  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.233);
-  color: white;
-  border-radius: 0.5ex;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1em;
-  cursor: pointer;
-  padding: 0.8rem 2rem;
-  display: block;
-  margin-top: 2rem;
-  margin-left: 10%;
-}
-.button:hover {
-  background: white;
-  color: black;
-  box-shadow: 0px 0px 10px 5px black;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-}
-.signup {
-  background-color: rgb(6, 10, 61);
-  width: 35%;
-  height: 18%;
-  position: absolute;
-  margin-top: 18%;
-  margin-left: 54%;
-  border-radius: 1ex 0 1ex 1ex;
-}
-.rightBand{
-  background-color: black;
-  width: 10%;
-  height: 100.5%;
-  position: absolute;
-  margin-top: -11%;
-  margin-left: 79%;
-}
-.newheretext{
-  color: white;
-  font-family:sans-serif;
-  text-indent: 5%;
-  margin-top: 3%;
-}
-hr{
-  width: 90%;
-  margin-top: -10%
-}
-.signuptext{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: azure;
-  margin: -5% 20%;
-  font-size: 150%;
-}
-.signup:hover{
-  box-shadow: inset 0px 0px 10px 1px rgb(255, 255, 255);
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  body {
+    background-image: linear-gradient(#1a0dac, rgb(146, 188, 236));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  form {
+    width: fit-content;
+    height: fit-content;
+    padding: 3% 15% 5% 5%;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.233),
+      inset 0px 0px 10px 5px rgb(5, 217, 245);
+    display: block;
+    border: solid transparent 2px;
+    margin: auto;
+    margin-top: 15%;
+    margin-bottom: 0;
+    border-radius: 2ex;
+    position: relative;
+  }
+  .logoimg {
+    width: 10%;
+    margin: -9% 0 0 -10%;
+    position: absolute;
+  }
+  .username,
+  .password {
+    border-radius: 1ex;
+    box-shadow: 0px 0px 1ex 0.5ex rgba(0, 0, 0, 0.233);
+    display: block;
+    border: none;
+    width: 90%;
+    height: 2em;
+    background-color: rgb(4, 230, 247);
+    margin-bottom: 5%;
+    color: white;
+    text-indent: 2%;
+    font-size: 1em;
+    padding: 2%;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .username:focus,
+  .password:focus {
+    box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.233);
+  }
+  .loginText {
+    font-family: "lovelyFont";
+    font-size: 2.5em;
+    text-align: center;
+    margin: 5% 0 8% 10%;
+  }
+  .headText {
+    font-family: "SparkX";
+    font-size: 5em;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px #160202;
+  }
+  @font-face {
+    font-family: "lovelyFont";
+    src: local("Lovely Font"), local("Lovely-Font"),
+      url("login font.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "SparkX";
+    src: local("Lovely Font"), local("Lovely-Font"),
+      url("sparkx font.ttf") format("opentype");
+  }
+  .button {
+    background: rgb(2, 3, 41);
+    border: none;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.233);
+    color: white;
+    border-radius: 0.5ex;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 0.9em;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    display: block;
+    margin-top: 2rem;
+    margin-left: 10%;
+  }
+  .button:hover {
+    background: white;
+    color: black;
+    box-shadow: 0px 0px 10px 5px black;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .signup {
+    background-color: rgb(6, 10, 61);
+    width: 35%;
+    height: 18%;
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 54%;
+    border-radius: 1ex 0 1ex 1ex;
+  }
+  .rightBand {
+    background-color: black;
+    width: 10%;
+    height: 100.5%;
+    position: absolute;
+    margin-top: -3.5%;
+    margin-left: 79%;
+  }
+  .newheretext {
+    color: white;
+    font-family: sans-serif;
+    text-indent: 5%;
+    margin-top: 3%;
+    font-size: 70%;
+  }
+  hr {
+    width: 90%;
+    margin-top: -10%;
+  }
+  .signuptext {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+    margin: -5% 20%;
+    font-size: 100rem;
+  }
+  .signup:hover {
+    box-shadow: inset 0px 0px 10px 1px rgb(255, 255, 255);
+  }
 }
