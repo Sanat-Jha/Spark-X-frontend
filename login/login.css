@@ -98,7 +98,7 @@ form {
 .signup {
   background-color: rgb(6, 10, 61);
   width: 35%;
-  height: 10%;
+  height: 18%;
   position: absolute;
   margin-top: 18%;
   margin-left: 54%;
@@ -112,9 +112,22 @@ form {
   margin-top: -11%;
   margin-left: 79%;
 }
-.signuptext{
+.newheretext{
   color: white;
   font-family:sans-serif;
   text-indent: 5%;
   margin-top: 3%;
+}
+hr{
+  width: 90%;
+  margin-top: -10%
+}
+.signuptext{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: azure;
+  margin: -5% 20%;
+  font-size: 150%;
+}
+.signup:hover{
+  box-shadow: inset 0px 0px 10px 1px rgb(255, 255, 255);
 }
