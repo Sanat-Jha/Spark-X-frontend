@@ -114,15 +114,15 @@
     text-indent: 5%;
     margin-top: 3%;
   }
-  hr {
-    width: 90%;
-    margin-top: -10%;
+  .line{
+    width: 130%;
   }
   .signuptext {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: azure;
-    margin: -5% 20%;
-    font-size: 150%;
+    color: rgb(4, 230, 247);
+    text-shadow: #160202 0 0 5px ;
+    margin: -5% 0 -20% 20%;
+    font-size: 200%;
   }
   .signup:hover {
     box-shadow: inset 0px 0px 10px 1px rgb(255, 255, 255);
@@ -244,11 +244,8 @@
     font-family: sans-serif;
     text-indent: 5%;
     margin-top: 3%;
+    display: inline;
     font-size: 70%;
-  }
-  hr {
-    width: 90%;
-    margin-top: -10%;
   }
   .signuptext {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
