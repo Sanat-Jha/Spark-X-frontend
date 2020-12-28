@@ -1,9 +1,9 @@
 body {
   background-image: linear-gradient(
     to bottom right,
-    #170c8fe1,
+    #120a69e1,
     rgb(123, 171, 224),
-    #170c8fe1
+    #120a69e1
   );
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,10 +25,10 @@ form {
 input {
   border-radius: 1ex;
   box-shadow: 0px 0px 10px 5px white;
-  display: block;
+  display: inline;
   border: none;
   width: 130%;
-  height: 3em;
+  height: 2.5em;
   background-color: black;
   margin-bottom: 5%;
   color: white;
@@ -40,16 +40,11 @@ input {
 input:focus {
   box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.233);
 }
-p {
-  font-family: serif;
-  font-style: ;
-  font-size: 3em;
-  margin: 5% 50%;
-  padding: 0;
-}
-.button {
+.signupbtn {
   margin-top: 1rem;
-  background: linear-gradient(rgb(4, 41, 252), rgba(0, 0, 0, 0.363));
+  margin: auto;
+  display: block;
+  background: rgb(0, 0, 0);
   border: none;
   box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.233);
   color: white;
@@ -59,11 +54,13 @@ p {
   cursor: pointer;
   padding: 0.8rem 2rem;
 }
-.button:hover {
+.signupbtn:hover {
   box-shadow: 0px 0px 10px 5px black;
+  background: white;
+  color: black;
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
+  -ms-transition: all 500ms ease; 
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
 }
@@ -78,4 +75,28 @@ p {
   font-family: "SparkX";
   src: local("Lovely Font"), local("Lovely-Font"),
     url("sparkx font.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Register";
+  src: local("Lovely Font"), local("Lovely-Font"),
+    url("RedThinker-Light-Italic.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Name";
+  src: local("Lovely Font"), local("Lovely-Font"),
+    url("Beastfom.ttf") format("opentype");
+}
+.registerText{
+  font-size: 3em;
+  text-align:center;
+  font-family: "Register";
+  margin: -10% 0 5% 30% ;
+  text-shadow: 2px 2px 2px white;
+}
+
+.name{
+  margin-left: 5%;
+  font-family: "Name";
+  color: white;
+  font-size: 2em;
 }
