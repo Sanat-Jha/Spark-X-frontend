@@ -1,3 +1,4 @@
+@import '../sass/main.scss';
 body {
   background-image: linear-gradient(
     to bottom right,
@@ -7,6 +8,7 @@ body {
   );
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow: hidden;
 }
 form {
   width: fit-content;
@@ -17,7 +19,7 @@ form {
   display: block;
   border: solid black 2px;
   margin: auto;
-  margin-top: 2%;
+  margin-top: 0;
   margin-bottom: 0;
   border-radius: 2ex;
 }
@@ -25,7 +27,7 @@ form {
 input {
   border-radius: 1ex;
   box-shadow: 0px 0px 10px 5px white;
-  display: inline;
+  display: block;
   border: none;
   width: 130%;
   height: 2.5em;
@@ -43,6 +45,7 @@ input:focus {
 .signupbtn {
   margin-top: 1rem;
   margin: auto;
+  margin-bottom: 5%;
   display: block;
   background: rgb(0, 0, 0);
   border: none;
@@ -95,8 +98,161 @@ input:focus {
 }
 
 .name{
-  margin-left: 5%;
   font-family: "Name";
   color: white;
   font-size: 2em;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  min-height: 5%;
+}
+.shadow1{
+  background-color: rgb(228, 253, 2);
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  transform: rotate(20deg);
+  margin-top: -10%;
+  margin-left: -30%;
+  border-radius: 2ex;
+  box-shadow: 0 1em 0.2em 5px #16020221;
+  opacity: 50%;
+}
+.shadow2{
+  background-color: rgb(232, 2, 253);
+  width: 50%;
+  height: 30%;
+  position: absolute;
+  border-radius: 50ex;
+  box-shadow: 0 1em 0.2em 5px #16020221;
+  opacity: 50%;
+  margin-left: 70%;
+  margin-top: 30%;
+}
+.shadow3{
+  background-color: rgb(2, 245, 253);
+  width: 5em;
+  height: 5em;
+  position: absolute;
+  border-radius: 50ex;
+  box-shadow: 0 1em 0.2em 5px #16020221;
+  opacity: 50%;
+  margin-top: 30%;
+  margin-left: 25%;
+}
+.line{
+  width: 15%;
+  height: 0.2%;
+  background-color: #ffffff;
+  position: fixed;
+  margin-top: 0.8%;
+}
+.already-a-user-text{
+  display: inline;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.buttons {
+  margin-top: 5%;
+  text-align: center;
+  border-radius: 30px;
+}
+.blob-btn {
+  margin-left: 20%;
+  z-index: 1;
+  position: relative;
+  padding: 5% 18%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0505a9;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  transition: color 0.5s;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.blob-btn:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #0505a9;
+  border-radius: 30px;
+}
+.blob-btn:after {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s 0.2s;
+  border-radius: 30px;
+}
+.blob-btn:hover {
+  color: #fff;
+  border-radius: 30px;
+}
+.blob-btn:hover:after {
+  transition: all 0.3s;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
+.blob-btn__inner {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: #fff;
+}
+.blob-btn__blob {
+  position: absolute;
+  top: 2px;
+  width: 25%;
+  height: 100%;
+  background: black;
+  border-radius: 100%;
+  transform: translate3d(0, 150%, 0) scale(1.7);
+  transition: transform 0.45s;
+}
+@supports (filter: url('#goo')) {
+  transform: translate3d(0, 150%, 0) scale(1.4);
+}
+.blob-btn__blob:nth-child(1) {
+  left: 0%;
+  transition-delay: 0s;
+}
+.blob-btn__blob:nth-child(2) {
+  left: 30%;
+  transition-delay: 0.08s;
+}
+.blob-btn__blob:nth-child(3) {
+  left: 60%;
+  transition-delay: 0.16s;
+}
+.blob-btn__blob:nth-child(4) {
+  left: 90%;
+  transition-delay: 0.24s;
+}
+.blob-btn:hover .blob-btn__blob {
+  transform: translateZ(0) scale(1.7);
+}
+@supports (filter: url('#goo')) {
+  transform: translateZ(0) scale(1.4);
 }
