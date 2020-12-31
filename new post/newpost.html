@@ -1,54 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spark X- New Post</title>
-    <link rel="stylesheet" type="text/css" href="newpost.css">
+    <link rel="stylesheet" type="text/css" href="newpost.css" />
 
     <script class="jsbin" src="../js/jquery.js"></script>
-    <link rel="icon" href="images/favicon.png" type="image" sizes="16x16" class="favicon">
+    
+    <link
+      rel="icon"
+      href="images/favicon.png"
+      type="image"
+      sizes="16x16"
+      class="favicon"
+    />
     <script>
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
 
-                reader.onload = function (e) {
-                    $('#blah')
-                        .attr('src', e.target.result)
-                };
 
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="header">
-        <span class="topband">
-            <a href="/"><img src="images/back icon.png" class="topicon"></a>
-        </span>
-        <div class="logoholder">
-            <p class="logotext">New Post</p>
-        </div>
+      <span class="topband">
+        <a href="/"><img src="images/back icon.png" class="topicon" /></a>
+      </span>
+      <div class="logoholder">
+        <p class="logotext">New Post</p>
+      </div>
     </div>
     <div class="mainarea">
-        <form action="" method="post" enctype="multipart/form-data">
-            <input type="file" name="image" accept="image/*" id="image" class="imageUpload" onchange="readURL(this);"/>
-            <label for="image" >
-                <img title="Upload the image" src="images/camera icon.png" class="cameraIcon" id="blah">
-            </label>
-            <input type="file" name="audio" accept="audio/*" id="audio" class="audioUpload"/>
-            <label for="image" >
-                <img title="Add Sound" src="images/Speaker icon.png" class="speakerIcon">
-            </label>
-            <img title="Add Hastags" src="images/hashtag icon.png" class="hashtagIcon">
-                <input type="text" class="caption" placeholder=" Caption..." name="caption">
-                <button type="submit" class="submit">Post</button>
-        </form>
-    </div>
-</body>
+      <form action="" method="post" enctype="multipart/form-data">
+        <input
+          type="file"
+          name="image"
+          accept="image/*"
+          id="image"
+          class="imageUpload"
+          onchange="readURL(this);"
+        />
+        <label for="image">
+          <img
+            title="Upload the image"
+            src="images/camera icon.png"
+            class="cameraIcon"
+            id="blah"
+          />
+        </label>
+        <input
+          type="file"
+          name="audio"
+          accept="audio/*"
+          id="audio"
+          class="audioUpload"
+        />
+        <label for="audio">
+          <img
+            title="Add Sound"
+            src="images/Speaker icon.png"
+            class="speakerIcon"
+          />
+        </label>
+        <img
+          title="Add Hastags"
+          src="images/hashtag icon.png"
+          class="hashtagIcon"
+          id="HastagButton"
+        />
+        <input
+          type="text"
+          class="caption"
+          placeholder=" Caption..."
+          name="caption"
+        />
+        <button type="submit" class="submit">Post</button>
+      </form>
 
+      <div id="Hastag-popup-back" class="Hastag-popup-back">
+        <!-- Modal content -->
+        <div class="Hastag-popup-content">
+          <span class="Hastag-popUp-close-Button">&times;</span>
+          <input type="text" name="Hastags" id="Hastags" />
+        </div><script src="newpost.js"></script>
+        
+      </div>
+    </div>
+  </body>
 </html>
+
